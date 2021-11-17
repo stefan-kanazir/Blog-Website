@@ -25,14 +25,14 @@ const AllPosts = () =>  {
 
   return (
     <div>
-      <h2>Blog Posts</h2>
-      <h3>Welcome to my blog posts page!</h3>
+      <h2 className="text-3xl font-bold text-blue-400">Blog Posts</h2>
+      <h3>Welcome to my blog posts page</h3>
       <div>
         {allPostsData &&
           allPostsData.map((post, index) => (
             <Link to={"/" + post.slug.current} key={post.slug.current}>
               <span key={index}>
-                <img src={post.mainImage.asset.url} alt="" />
+                <img src={post.mainImage.asset.url} alt={`${post.title}`} />
                 <span>
                   <h2>{post.title}</h2>
                 </span>
