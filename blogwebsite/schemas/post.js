@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   name: 'post',
   title: 'Post',
@@ -7,6 +8,7 @@ export default {
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required()
     },
     {
       name: 'slug',
@@ -32,10 +34,21 @@ export default {
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: {
+        type: "category"
+      }
+    },
+    {
+      name: 'shortDescription',
+      title: 'Short Description',
+      type: 'text',
+      options: {
+        maxLength: 200,
+      },
+      validation: Rule => Rule.required()
     },
     {
       name: 'publishedAt',
