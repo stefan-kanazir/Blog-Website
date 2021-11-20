@@ -33,16 +33,16 @@ const AllPosts = () =>  {
           {allPostsData &&
             allPostsData.map((post, index) => (
               <Link to={"/" + post.slug.current} key={post.slug.current}>
-                <article key={index} className="group">
+                <article key={index} className="group shadow-lg duration-300 rounded-xl overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl">
                   <div>
-                    <img src={post.mainImage.asset.url} alt={`${post.title}`} className="object-cover w-full h-40 xl:h-80" />
+                    <img src={post.mainImage.asset.url} alt={`${post.title}`} className="group object-cover w-full h-40 xl:h-80" />
                   </div>
                   <div className="bg-white grid">
                     <div className="p-6">
                       <h2 className="text-lg font-semibold mb-1">{post.title}</h2>
                       <p className="text-gray-600">{post.shortDescription}</p>
                     </div>
-                    <button className="px-6 py-3 justify-self-end mr-0 bg-gray-300 uppercase text-xs tracking-wider font-medium opacity-0 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+                    <button className="px-6 py-3 rounded-sm overflow-hidden justify-self-end mr-0 bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
                       Learn more
                     </button>
                   </div>
