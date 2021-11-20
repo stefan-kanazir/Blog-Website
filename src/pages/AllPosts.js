@@ -29,23 +29,23 @@ const AllPosts = () =>  {
       <div className="container mx-auto"> 
         <h2 className="text-5xl flex justify-center mb-4">Blog Posts</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog posts page</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-max gap-8">
           {allPostsData &&
             allPostsData.map((post, index) => (
               <Link to={"/" + post.slug.current} key={post.slug.current}>
-                <article key={index} className="group shadow-lg duration-300 rounded-xl overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl">
+                <article key={index} className="group flex flex-col shadow-lg h-full bg-white duration-300 rounded-xl overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl">
                   <div>
                     <img src={post.mainImage.asset.url} alt={`${post.title}`} className="group object-cover w-full h-40 xl:h-80" />
                   </div>
-                  <div className="bg-white grid">
-                    <div className="p-6">
+
+                  <div className="p-6 flex-grow">
                       <h2 className="text-lg font-semibold mb-1">{post.title}</h2>
                       <p className="text-gray-600">{post.shortDescription}</p>
-                    </div>
-                    <button className="px-6 py-3 rounded-sm overflow-hidden justify-self-end mr-0 bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
-                      Learn more
-                    </button>
                   </div>
+
+                  <button className="px-6 py-3 self-end rounded-sm bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+                    Learn more
+                  </button>
                 </article>
               </Link>
             ))}
