@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
+import { HiArrowNarrowRight } from "react-icons/hi"
 
 const AllPosts = () =>  {
   const [allPostsData, setAllPosts] = useState(null);
@@ -25,7 +26,7 @@ const AllPosts = () =>  {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen p-12">
+    <div className="bg-gray-100 min-h-screen py-12 px-6">
       <div className="container mx-auto"> 
         <h2 className="text-5xl flex justify-center mb-4">Blog Posts</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog posts page</h3>
@@ -43,8 +44,8 @@ const AllPosts = () =>  {
                       <p className="text-gray-600">{post.shortDescription}</p>
                   </div>
 
-                  <button className="px-6 py-3 self-end rounded-sm bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
-                    Learn more
+                  <button className="px-6 py-3 flex items-center self-end rounded-sm bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+                    <span className="mr-2">Learn more</span> <HiArrowNarrowRight />
                   </button>
                 </article>
               </Link>

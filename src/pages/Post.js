@@ -1,8 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import { IoLogoTwitter, IoMdMail } from "react-icons/io"
+import { FaFacebookF } from "react-icons/fa"
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -42,7 +45,8 @@ const Post = () => {
   return (
     <div>
       <section className="bg-yellow-50 py-10 mb-10">
-        <div className="max-w-3xl mx-auto px-4 sm:px-0">
+        <div className="max-w-3xl mx-auto px-6 sm:px-0">
+
           <div className="flex items-center">
               <img
                 src={urlFor(postData.authorImage).width(100).url()}
@@ -57,13 +61,32 @@ const Post = () => {
             <p className="text-lg text-gray-600">{postData.shortDescription}</p>
           </div>
 
-          <div>
-            <span className="font-semibold text-gray-600">Share:</span>
+          {/* Share section */}
+          <div className="flex">
+            <span className="font-semibold text-gray-600 mr-4">Share:</span>
+            <ul className="flex gap-x-4">
+              <li>
+                <a href="#" target="_blank" className="font-light hover:underline">
+                  <IoLogoTwitter className="inline text-xl hover:text-gray-600" />
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" className="font-light hover:underline">
+                  <FaFacebookF className="inline text-xl hover:text-gray-600" />
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" className="font-light hover:underline">
+                  <IoMdMail className="inline text-xl hover:text-gray-600" />
+                </a>
+              </li>
+            </ul>
           </div>
+
         </div>
       </section>
 
-      <div className="xl:w-2/3 mx-auto mb-10 xl:mb-14 h-48 xl:h-96 overflow-h px-4 sm:px-0 overflow-hidden">
+      <div className="xl:w-2/3 mx-auto mb-10 max-w-5xl xl:mb-14 h-48 xl:h-96 overflow-h px-6 sm:px-0 overflow-hidden">
         <img 
           src={urlFor(postData.mainImage).url()} 
           alt={`${postData.title}`} 
@@ -72,7 +95,7 @@ const Post = () => {
       </div>
 
 
-      <div className="container max-w-3xl mx-auto px-4 sm:px-0">
+      <div className="container max-w-3xl mx-auto px-6 sm:px-0">
         <BlockContent
           blocks={postData.body}
           projectId={sanityClient.clientConfig.projectId}

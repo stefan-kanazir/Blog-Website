@@ -1,8 +1,12 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
 import AllPosts from "./pages/AllPosts"
 import Post from "./pages/Post";
+
+// components
+import Header from "./components/Header";
 
 
 function App() {
@@ -10,7 +14,7 @@ function App() {
 		<BrowserRouter>
 			{/* Header Area */}
 			<div className="max-w-full">
-				{/* <Header /> */}
+				<Header /> 
 			</div>
 
 			{/* Route Area */}
