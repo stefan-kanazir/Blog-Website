@@ -44,7 +44,7 @@ const Post = () => {
 
   return (
     <div>
-      <section className="bg-yellow-50 py-10 mb-10">
+      <section className="bg-blue-50 py-10 mb-10">
         <div className="max-w-3xl mx-auto px-6 sm:px-0">
 
           <div className="flex items-center">
@@ -86,14 +86,11 @@ const Post = () => {
         </div>
       </section>
 
-      <div className="xl:w-2/3 mx-auto mb-10 max-w-5xl xl:mb-14 h-48 xl:h-96 overflow-h px-6 sm:px-0 overflow-hidden">
-        <img 
-          src={urlFor(postData.mainImage).url()} 
-          alt={`${postData.title}`} 
-          className="object-cover w-full rounded-lg h-full"
-        />
+      <div className="xl:w-2/3 mx-auto max-w-5xl overflow-hidden">
+        <div class="aspect-w-16 aspect-h-9 px-6 sm:px-0 mb-10">
+          <img src={urlFor(postData.mainImage).url()} alt={`${postData.title}`}  className="group rounded w-full h-full object-center object-cover" />
+        </div>
       </div>
-
 
       <div className="container max-w-3xl mx-auto px-6 sm:px-0">
         <BlockContent

@@ -26,7 +26,7 @@ const AllPosts = () =>  {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-6">
+    <div className="bg-blue-50 min-h-screen py-12 px-6">
       <div className="container mx-auto"> 
         <h2 className="text-5xl flex justify-center mb-4">Blog Posts</h2>
         <h3 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog posts page</h3>
@@ -35,8 +35,8 @@ const AllPosts = () =>  {
             allPostsData.map((post, index) => (
               <Link to={"/" + post.slug.current} key={post.slug.current}>
                 <article key={index} className="group flex flex-col shadow-lg h-full bg-white duration-300 rounded-xl overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl">
-                  <div>
-                    <img src={post.mainImage.asset.url} alt={`${post.title}`} className="group object-cover w-full h-40 xl:h-80" />
+                  <div class="aspect-w-16 aspect-h-9">
+                    <img src={post.mainImage.asset.url} alt={`${post.title}`} className="group w-full h-full object-center object-cover" />
                   </div>
 
                   <div className="p-6 flex-grow">
