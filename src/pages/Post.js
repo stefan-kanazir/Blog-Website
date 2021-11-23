@@ -44,7 +44,7 @@ const Post = () => {
 
   return (
     <div>
-      <section className="py-10">
+      <section className="py-10 bg-green-50">
         <div className="max-w-3xl mx-auto px-6 sm:px-0">
 
           <div className="flex items-center">

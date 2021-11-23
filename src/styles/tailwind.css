@@ -16,10 +16,6 @@
     p {
       @apply text-gray-500 mb-6;
     }
-
-    body {
-      @apply bg-blue-50;
-    }
   }
 
 @tailwind components;

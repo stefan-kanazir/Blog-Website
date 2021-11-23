@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<header className="py-4 bg-white">
-            <div className="container lg:px-0 px-6 py-4 lg:py-0 lg:w-3/4 w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
+		<header className="py-4 container mx-auto">
+            <div className="lg:px-0 px-6 py-4 lg:py-0 w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
                 <NavLink to="/" className="flex items-center">
                     <span className="text-xl lg:text-2xl font-semibold text-green-600">SmartCommerce</span>
                 </NavLink>

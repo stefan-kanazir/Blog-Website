@@ -1,22 +1,21 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { IoLogoTwitter, IoMdMail } from "react-icons/io"
-import { FaFacebookF } from "react-icons/fa"
+import { IoLogoTwitter, IoMdMail, IoLogoGithub, IoLogoDribbble } from "react-icons/io";
 
 const Header = () => {
 	return (
-		<footer className="py-12 bg-green-900">
+		<footer className="py-12 bg-green-900 mt-12 px-5 md:px-0">
             <div className="container mx-auto">
-                <NavLink to="/" className="flex items-center justify-center">
-                    <span className="text-xl lg:text-2xl font-semibold text-white">SmartCommerce</span>
+                <NavLink to="/" className="text-xl block text-center lg:text-2xl font-semibold text-white hover:text-gray-300">
+                    SmartCommerce
                 </NavLink>
                 <nav className="text-gray-300 border-b pb-12 mt-4 border-opacity-20">
                     <ul className="flex gap-x-10 items-center justify-center">
                         <li>
                             <NavLink
                                 to="/about"
-                                className="hover:text-white"
+                                className="hover:text-white hover:underline"
                                 activeClassName="active-link"
                             >
                                 About
@@ -25,7 +24,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/blog"
-                                className="hover:text-white"
+                                className="hover:text-white hover:underline"
                                 activeClassName="active-link"
                             >
                                 Blog
@@ -34,7 +33,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/contact"
-                                className="hover:text-white"
+                                className="hover:text-white hover:underline"
                                 activeClassName="active-link"
                             >
                                 Contact
@@ -44,8 +43,8 @@ const Header = () => {
                 </nav>
 
                 {/* Second section */}
-                <div className="flex justify-between items-end pt-6">
-                    <span className="text-gray-300">© {new Date().getFullYear()} SmartCommerce. All rights reserved</span>
+                <div className="flex flex-col items-center md:flex-row justify-between pt-6">
+                    <span className="text-gray-300 mb-4 md:mb-0">© {new Date().getFullYear()} SmartCommerce. All rights reserved</span>
                     <ul className="flex gap-x-4">
                     <li>
                         <a href="#" target="_blank">
@@ -54,12 +53,17 @@ const Header = () => {
                     </li>
                     <li>
                         <a href="#" target="_blank">
-                        <FaFacebookF className="inline text-lg text-white hover:text-gray-300" />
+                        <IoLogoGithub className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank">
                         <IoMdMail className="inline text-lg text-white hover:text-gray-300" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                        <IoLogoDribbble className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     </ul>
