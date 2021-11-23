@@ -1,7 +1,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { IoLogoTwitter, IoMdMail, IoLogoGithub, IoLogoDribbble } from "react-icons/io";
+import { IoLogoTwitter, IoMdMail, IoLogoGithub, IoLogoDribbble, IoLogoLinkedin } from "react-icons/io";
 
 const Header = () => {
 	return (
@@ -44,11 +44,16 @@ const Header = () => {
 
                 {/* Second section */}
                 <div className="flex flex-col items-center md:flex-row justify-between pt-6">
-                    <span className="text-gray-300 mb-4 md:mb-0">© {new Date().getFullYear()} SmartCommerce. All rights reserved</span>
+                    <span className="text-gray-300 mb-4 md:mb-0">©{new Date().getFullYear()} SmartCommerce. All rights reserved</span>
                     <ul className="flex gap-x-4">
                     <li>
                         <a href="#" target="_blank">
                         <IoLogoTwitter className="inline text-lg text-white hover:text-gray-300" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                        <IoLogoLinkedin className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     <li>
