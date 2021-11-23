@@ -9,15 +9,14 @@ import Blog from "./pages/Blog";
 
 // components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 function App() {
 	return (
 		<BrowserRouter>
-			{/* Header Area */}
-			<div className="max-w-full">
-				<Header /> 
-			</div>
+		
+			<Header /> 
 
 			{/* Route Area */}
 			<Routes>
@@ -26,10 +25,7 @@ function App() {
 				<Route element={<Post />}  path="blog/:slug" />
 			</Routes>
 
-			{/* Footer Area */}
-			<div className="max-w-full">
-				{/* <Footer /> */}
-			</div>
+			<Footer />
 
 		</BrowserRouter>
 	);

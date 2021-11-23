@@ -9,7 +9,7 @@ const Home = () =>  {
             <h2 className="text-5xl flex justify-center mb-4">Blog Posts</h2>
             <h3 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog posts page</h3>
             <AllPosts />
-      </div>
+        </div>
     </div>
   )
 }
