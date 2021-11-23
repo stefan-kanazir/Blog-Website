@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import AllPosts from "./pages/AllPosts"
+import Home from "./pages/Home";
 import Post from "./pages/Post";
+import Blog from "./pages/Blog";
+
 
 // components
 import Header from "./components/Header";
@@ -19,8 +21,9 @@ function App() {
 
 			{/* Route Area */}
 			<Routes>
-        <Route element={<AllPosts />} path="/" exact />
-        <Route element={<Post />}  path="/:slug" />
+				<Route element={<Home />} path="/" exact />
+				<Route element={<Blog />} path="/blog" />
+				<Route element={<Post />}  path="blog/:slug" />
 			</Routes>
 
 			{/* Footer Area */}

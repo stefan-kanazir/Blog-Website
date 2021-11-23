@@ -1,17 +1,17 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {ReactComponent as Logo} from '../assets/logo.svg';
+// import {ReactComponent as Logo} from '../assets/logo.svg';
 
 const Header = () => {
 	return (
 		<header className="py-3">
-            <nav className="container lg:px-0 px-6 py-4 lg:py-0 lg:w-3/4 w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div className="container lg:px-0 px-6 py-4 lg:py-0 lg:w-3/4 w-full mx-auto flex flex-col lg:flex-row justify-between items-center">
                 <NavLink to="/" className="flex items-center">
                     {/* <Logo className="text-xl w-10 h-10"/> */}
                     <p className="text-xl lg:text-2xl font-semibold text-green-600">SmartCommerce</p>
                 </NavLink>
-                <div className="lg:block text-gray-600">
+                <nav className="lg:block text-gray-600">
                     <ul className="flex gap-x-10 flex-col items-center lg:flex-row">
                         <li>
                             <NavLink
@@ -59,8 +59,8 @@ const Header = () => {
                             </NavLink>
                         </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
 		</header>
 	);
 };

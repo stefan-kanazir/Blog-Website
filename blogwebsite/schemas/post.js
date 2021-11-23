@@ -67,6 +67,7 @@ export default {
       title: 'title',
       author: 'author.name',
       media: 'mainImage',
+      category: 'category',
     },
     prepare(selection) {
       const {author} = selection
