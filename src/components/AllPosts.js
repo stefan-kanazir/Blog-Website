@@ -17,7 +17,11 @@ const AllPosts = () =>  {
           asset->{
           _id,
           url
-        }
+        },
+        body,
+        category->{
+          title
+        },
       }
     }`
       )
@@ -35,7 +39,9 @@ const AllPosts = () =>  {
                 <img src={post.mainImage.asset.url} alt={`${post.title}`} className="group w-full h-full object-center object-cover" />
               </div>
 
-              <div className="p-6 flex-grow">
+              <small className="mb-3 mt-6 border-l-2 border-green-700 pl-6 text-sm block text-green-700 font-bold">Test Category</small>
+
+              <div className="px-6 flex-grow">
                   <h2 className="text-lg font-semibold mb-1">{post.title}</h2>
                   <p className="text-gray-600">{post.shortDescription}</p>
               </div>
