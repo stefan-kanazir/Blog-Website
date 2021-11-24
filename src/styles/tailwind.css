@@ -16,6 +16,10 @@
     p {
       @apply text-gray-500 mb-6;
     }
+
+    .container {
+      @apply px-5;
+    }
   }
 
 @tailwind components;

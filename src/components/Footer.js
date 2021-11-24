@@ -5,7 +5,7 @@ import { IoLogoTwitter, IoMdMail, IoLogoGithub, IoLogoDribbble, IoLogoLinkedin }
 
 const Header = () => {
 	return (
-		<footer className="py-12 bg-green-900 mt-12 px-5 md:px-0">
+		<footer className="py-12 bg-green-900 mt-12">
             <div className="container mx-auto">
                 <NavLink to="/" className="text-xl block text-center lg:text-2xl font-semibold text-white hover:text-gray-300">
                     SmartCommerce

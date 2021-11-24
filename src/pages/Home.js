@@ -4,10 +4,9 @@ import AllPosts from "../components/AllPosts";
 const Home = () =>  {
 
   return (
-    <div className="min-h-screen py-12 px-6">
+    <div className="min-h-screen py-12">
         <div className="container mx-auto"> 
-            <h2 className="text-5xl flex justify-center mb-4">Hey there</h2>
-            <h3 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my blog posts page</h3>
+            <h2 className="text-5xl flex justify-center mb-12">Featured Articles</h2>
             <AllPosts />
         </div>
     </div>

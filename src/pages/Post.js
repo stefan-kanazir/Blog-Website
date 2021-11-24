@@ -57,7 +57,7 @@ const Post = () => {
           </div>
 
           <div className="my-5">
-            <h1 className="text-5xl mb-4">{postData.title}</h1>
+            <h1 className="lg:text-5xl mb-4">{postData.title}</h1>
             <p className="text-lg text-gray-600">{postData.shortDescription}</p>
           </div>
 
@@ -87,9 +87,9 @@ const Post = () => {
       </section>
 
       <div class="bg-white py-12">
-        <div className="xl:w-2/3 mx-auto max-w-5xl overflow-hidden">
-          <div class="aspect-w-16 aspect-h-9 px-6 sm:px-0 mb-10">
-            <img src={urlFor(postData.mainImage).url()} alt={`${postData.title}`}  className="group rounded w-full h-full object-center object-cover" />
+        <div className="xl:w-2/3 mx-auto max-w-5xl overflow-hidden px-6 sm:px-0">
+          <div class="aspect-w-16 aspect-h-9 mb-10">
+            <img src={urlFor(postData.mainImage).url()} alt={`${postData.title}`}  className="rounded w-full h-full object-center object-cover" />
           </div>
         </div>
 
