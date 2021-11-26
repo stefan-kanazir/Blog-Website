@@ -8,8 +8,8 @@ import Blog from "./pages/Blog";
 
 
 // components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/molecules/Header";
+import Footer from "./components/molecules/Footer";
 
 
 function App() {

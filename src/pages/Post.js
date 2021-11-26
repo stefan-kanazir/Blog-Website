@@ -45,7 +45,7 @@ const Post = () => {
   return (
     <div>
       <section className="py-10 bg-green-50">
-        <div className="max-w-3xl mx-auto px-6 sm:px-0">
+        <div className="max-w-4xl container mx-auto">
 
           <div className="flex items-center">
               <img
@@ -87,13 +87,13 @@ const Post = () => {
       </section>
 
       <div class="bg-white py-12">
-        <div className="xl:w-2/3 mx-auto max-w-5xl overflow-hidden px-6 sm:px-0">
+        <div className="xl:w-2/3 mx-auto max-w-5xl overflow-hidden px-4 lg:px-6 xl:px-0">
           <div class="aspect-w-16 aspect-h-9 mb-10">
             <img src={urlFor(postData.mainImage).url()} alt={`${postData.title}`}  className="rounded w-full h-full object-center object-cover" />
           </div>
         </div>
 
-        <div className="container max-w-3xl mx-auto px-6 sm:px-0">
+        <div className="max-w-4xl container mx-auto block-content">
           <BlockContent
             blocks={postData.body}
             projectId={sanityClient.clientConfig.projectId}

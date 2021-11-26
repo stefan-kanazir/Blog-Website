@@ -1,12 +1,14 @@
 import React from "react";
 import AllPosts from "../components/AllPosts";
+import Hero from "../components/Hero";
 
 const Home = () =>  {
 
   return (
-    <div className="min-h-screen py-12">
-        <div className="container mx-auto"> 
-            <h2 className="text-5xl flex justify-center mb-12">Featured Articles</h2>
+    <div className="min-h-screen">
+        <div className="container mx-auto">
+            <Hero /> 
+            <h2 className="text-3xl lg:text-5xl mb-12 text-center">Featured Articles</h2>
             <AllPosts />
         </div>
     </div>

@@ -6,7 +6,7 @@
     }
 
     h2 {
-      @apply text-2xl mb-2;
+      @apply text-2xl;
     }
 
     h3 {
@@ -14,12 +14,20 @@
     }
 
     p {
-      @apply text-gray-500 mb-6;
+      @apply text-gray-500;
     }
 
-    .container {
-      @apply px-5;
+    .block-content p {
+      @apply mb-6;
     }
+
+    .block-content h2 {
+      @apply mb-2;
+    }
+
+    /* .container {
+      @apply px-5;
+    } */
   }
 
 @tailwind components;

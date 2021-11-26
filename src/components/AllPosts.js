@@ -41,13 +41,13 @@ const AllPosts = () =>  {
 
               <small className="mb-3 mt-6 border-l-2 border-green-700 pl-6 text-sm block text-green-700 font-bold">Test Category</small>
 
-              <div className="px-6 flex-grow">
+              <div className="px-6 pb-6 flex-grow">
                   <h2 className="text-lg font-semibold mb-1">{post.title}</h2>
                   <p className="text-gray-600">{post.shortDescription}</p>
               </div>
 
               <button className="px-6 py-3 flex items-center self-end rounded-sm bg-gray-200 uppercase text-xs tracking-wider font-medium opacity-100 lg:opacity-0 duration-500 ease-in-out group-hover:opacity-100">
-                <span className="mr-2">Learn more</span> <HiArrowNarrowRight />
+                <span className="mr-2">Read more</span> <HiArrowNarrowRight />
               </button>
             </article>
           </Link>
