@@ -2,7 +2,7 @@
 
 @layer base {
     h1 {
-      @apply text-3xl;
+      @apply text-4xl;
     }
 
     h2 {
