@@ -1,7 +1,8 @@
 import React from "react";
-import ButtonWhite from "./atoms/ButtonWhite";
-import SecondaryButton from "./atoms/SecondaryButton";
+import { Link } from "react-router-dom";
 import HeroImage from "../assets/HeroBanner.png";
+import { HiArrowNarrowRight } from "react-icons/hi"
+import { PrimaryButton, TertiaryButton } from './atoms';
 
 const Hero = () => {
     return (
@@ -10,9 +11,13 @@ const Hero = () => {
                 <div className="flex flex-col justify-center">
                     <h1 className="md:text-6xl font text-gray-100">Lorem ipsum dolor sit <span className="underline text-yellow-400">amet consectetur</span>, adipiscing elit</h1>
                     <p className="py-8 lg:py-12 text-xl text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque dolor, mollis in malesuada molestie, imperdiet ac dolor. Fusce dignissim nunc ut enim facilisis, a facilisis</p>
-                    <div className="flex">
-                        <ButtonWhite text="learn more" url="/blog"/>
-                        <SecondaryButton text="how it works" url="/about" className="ml-4" />
+                    <div className="flex gap-4">
+                        <Link to="/blog">
+                            <PrimaryButton $light={true}>Learn more</PrimaryButton>
+                        </Link>
+                        <Link to="/about">
+                            <TertiaryButton $light={true}>How it works <HiArrowNarrowRight className="ml-2 "/></TertiaryButton>
+                        </Link>
                     </div>
                 </div>
                 <div className="">
