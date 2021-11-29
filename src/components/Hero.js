@@ -5,7 +5,7 @@ import HeroImage from "../assets/HeroBanner.png";
 
 const Hero = () => {
     return (
-        <section className="mb-24 py-20 xl:py-32 bg-green-900">
+        <section className="mb-24 py-20 xl:py-32 bg-gray-800">
             <div className="container grid grid-cols-1 lg:grid-cols-2 gap-24 mx-auto">
                 <div className="flex flex-col justify-center">
                     <h1 className="md:text-6xl font text-gray-100">Lorem ipsum dolor sit <span className="underline text-yellow-400">amet consectetur</span>, adipiscing elit</h1>
