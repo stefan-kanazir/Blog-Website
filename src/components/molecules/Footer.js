@@ -47,28 +47,28 @@ const Header = () => {
                     <span className="text-gray-300 mb-4 md:mb-0">©{new Date().getFullYear()} SmartCommerce. All rights reserved</span>
                     <ul className="flex gap-x-4">
                     <li>
-                        <a href="#" target="_blank">
-                        <IoLogoTwitter className="inline text-lg text-white hover:text-gray-300" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
+                        <a href="https://rs.linkedin.com/in/stefan-kanazir" target="_blank">
                         <IoLogoLinkedin className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/stefan-kanazir/" target="_blank">
                         <IoLogoGithub className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="mailto:kanazir.stefan@gmail.com" target="_blank">
                         <IoMdMail className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://dribbble.com/stefan-kanazir" target="_blank">
                         <IoLogoDribbble className="inline text-lg text-white hover:text-gray-300" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/stefankanazir" target="_blank">
+                        <IoLogoTwitter className="inline text-lg text-white hover:text-gray-300" />
                         </a>
                     </li>
                     </ul>
