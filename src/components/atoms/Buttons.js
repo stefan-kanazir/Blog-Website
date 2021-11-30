@@ -11,6 +11,9 @@ const Button = tw.button`
     flex
     items-center
     justify-items-center
+    transition
+    ease-in-out
+    duration-300
 `;
 
 export const PrimaryButton = tw(Button) `
@@ -24,7 +27,8 @@ export const PrimaryButton = tw(Button) `
         hover:bg-gray-200
 
         focus:ring 
-        focus:ring-white 
+        focus:ring-gray-300 
+        focus:outline-none
         focus:ring-offset-2 
         focus:ring-offset-transparent 
         ` : `
