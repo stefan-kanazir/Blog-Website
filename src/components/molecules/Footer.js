@@ -23,6 +23,15 @@ const Header = () => {
                         </li>
                         <li>
                             <NavLink
+                                to="/categories"
+                                className="hover:text-white hover:underline"
+                                activeClassName="active-link"
+                            >
+                                Categories
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
                                 to="/blog"
                                 className="hover:text-white hover:underline"
                                 activeClassName="active-link"

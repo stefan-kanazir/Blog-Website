@@ -65,11 +65,11 @@ export const SecondaryButton = tw(Button) `
         text-green-700
         border-green-700
 
-        hover:bg-green-50
+        hover:bg-green-700
         hover:bg-opacity-10
 
         focus:ring 
-        focus:ring-green-900 
+        focus:ring-green-700 
         focus:ring-offset-2 
         focus:ring-offset-transparent 
         `
