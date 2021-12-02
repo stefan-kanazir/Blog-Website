@@ -27,6 +27,15 @@ const Header = () => {
                         </li>
                         <li>
                             <NavLink
+                                to="/categories"
+                                className="hover:text-green-600"
+                                activeClassName="active-link"
+                            >
+                                Categories
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
                                 to="/blog"
                                 className="hover:text-green-600"
                                 activeClassName="active-link"
@@ -71,7 +80,7 @@ const Header = () => {
             </div>
 
             {isOpen ? (
-                <nav className="mx-auto py-4 shadow-2xl mb-8 block lg:hidden">
+                <nav className="mx-auto py-4 shadow-2xl mb-8 block rounded lg:hidden">
                     <ul className="flex flex-col items-center px-6">
                     <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
                             <NavLink
@@ -89,6 +98,15 @@ const Header = () => {
                                 activeClassName="active-link"
                             >
                                 About
+                            </NavLink>
+                        </li>
+                        <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
+                            <NavLink
+                                to="/categories"
+                                className="block text-xl p-6 w-full border-b"
+                                activeClassName="active-link"
+                            >
+                                Categories
                             </NavLink>
                         </li>
                         <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
