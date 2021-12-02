@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Blog from "./pages/Blog";
 import Categories from "./pages/Categories";
-import Category from "./pages/Category";
+// import Category from "./components/molecules/Category";
 
 
 

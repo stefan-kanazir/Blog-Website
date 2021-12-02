@@ -1,6 +1,6 @@
 import React from "react";
 import AllPosts from "../components/AllPosts";
-import Hero from "../components/Hero";
+import Hero from "../components/molecules/Hero";
 
 const Home = () =>  {
 

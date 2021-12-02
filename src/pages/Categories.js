@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client";
 
-import Category from "./Category";
+import Category from "../components/molecules/Category";
 
 const Categories = () => {
 	const [categories, setCategories] = useState(null);
@@ -26,18 +26,17 @@ const Categories = () => {
 	}, []);
 
 	return (
-		<div className="">
-			<h3 className="text-3xl font-bold text-center my-10 lg:my-5">
-				All Categories🥘
-			</h3>
+		<section className="container mx-auto min-h-screen py-12"> 
+			<h2 className="text-3xl lg:text-5xl flex justify-center mb-4">Categories</h2>
+			<h3 className="text-lg text-gray-600 flex justify-center mb-12 text-center mx-auto max-w-4xl">On the SmartCommerce blog, you’ll find in-depth guides, how-tos, success stories, interviews, reviews, special announcements, promotions, and much more, all designed to help entrepreneurs, developers, designers, and marketers to bring online shopping experience to another level.</h3>
 
-			<div className="flex flex-col lg:flex-row lg:justify-center flex-wrap w-full gap-10 my-10">
+			<div className="grid md:grid-cols-2 auto-rows-max gap-8 md:max-w-4xl mx-auto">
 				{categories &&
 					categories.map((category) => (
-						<Category key={category._id} category={category} />
+							<Category key={category._id} category={category} />						
 					))}
 			</div>
-		</div>
+		</section>
 	);
 };
 

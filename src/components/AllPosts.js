@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
-import { HiArrowNarrowRight } from "react-icons/hi"
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 const AllPosts = () =>  {
   const [allPostsData, setAllPosts] = useState(null);

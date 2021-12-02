@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImage from "../assets/HeroBanner.png";
+import HeroImage from "../../assets/HeroBanner.png";
 import { HiArrowNarrowRight } from "react-icons/hi"
-import { PrimaryButton, TertiaryButton } from './atoms';
+import { PrimaryButton, TertiaryButton } from '../atoms';
 
 const Hero = () => {
     return (
