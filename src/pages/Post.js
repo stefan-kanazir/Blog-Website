@@ -5,7 +5,8 @@ import sanityClient from "../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import { IoLogoTwitter, IoMdMail } from "react-icons/io"
-import { FaFacebookF } from "react-icons/fa"
+import { FaFacebookF, FaRedditAlien } from "react-icons/fa"
+import { EmailShareButton, FacebookShareButton, RedditShareButton, TwitterShareButton } from "react-share";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -66,19 +67,24 @@ const Post = () => {
             <span className="font-semibold text-gray-600 mr-4">Share:</span>
             <ul className="flex gap-x-4">
               <li>
-                <a href="#" target="_blank" className="font-light hover:underline">
+                <TwitterShareButton url={window.location.href} title={postData.title}>
                   <IoLogoTwitter className="inline text-xl hover:text-gray-600" />
-                </a>
+                </TwitterShareButton>
               </li>
               <li>
-                <a href="#" target="_blank" className="font-light hover:underline">
+                <FacebookShareButton url={window.location.href} title={postData.title}>
                   <FaFacebookF className="inline text-xl hover:text-gray-600" />
-                </a>
+                </FacebookShareButton>
               </li>
               <li>
-                <a href="#" target="_blank" className="font-light hover:underline">
+                <EmailShareButton url={window.location.href} title={postData.title}>
                   <IoMdMail className="inline text-xl hover:text-gray-600" />
-                </a>
+                </EmailShareButton>
+              </li>
+              <li>
+                <RedditShareButton url={window.location.href} title={postData.title}>
+                  <FaRedditAlien className="inline text-xl hover:text-gray-600" />
+                </RedditShareButton>
               </li>
             </ul>
           </div>
