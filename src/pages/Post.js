@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import sanityClient from "../client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
@@ -24,6 +24,9 @@ const Post = () => {
           title,
           slug,
           publishedAt,
+          category->{
+            title
+          },
           shortDescription,
           mainImage{
             asset->{
@@ -57,15 +60,23 @@ const Post = () => {
               <h4>by <span className="font-semibold">{postData.name}</span> on <span className="font-semibold">{postData.publishedAt}</span></h4>
           </div>
 
-          <div className="my-5">
+          {/* Intro text */}
+          <div className="my-6">
+            
+            <h4 className="mb-1 inline-block font-regular">Category:&nbsp;
+              <Link className="font-semibold hover:underline" to={"/category/" + postData.category.title.toLowerCase()}>
+                {postData.category.title}
+              </Link>
+            </h4>
+            
             <h1 className="lg:text-5xl mb-4">{postData.title}</h1>
-            <p className="text-lg text-gray-600">{postData.shortDescription}</p>
+            <p className="text-xl text-gray-600">{postData.shortDescription}</p>
           </div>
 
           {/* Share section */}
           <div className="flex">
             <span className="font-semibold text-gray-600 mr-4">Share:</span>
-            <ul className="flex gap-x-4">
+            <ul className="flex gap-x-5">
               <li>
                 <TwitterShareButton url={window.location.href} title={postData.title}>
                   <IoLogoTwitter className="inline text-xl hover:text-gray-600" />

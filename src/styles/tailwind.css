@@ -14,15 +14,15 @@
     }
 
     p {
-      @apply text-gray-500;
+      @apply text-gray-600;
     }
 
     .block-content p {
-      @apply mb-6;
+      @apply mb-10 md:text-lg md:leading-loose;
     }
 
     .block-content h2 {
-      @apply mb-2;
+      @apply mb-3 md:text-3xl;
     }
 
     /* .container {
