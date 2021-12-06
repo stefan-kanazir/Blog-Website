@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
 import Post from "./pages/Post";
+import FilteredPosts from "./pages/FilteredPosts";
 import Blog from "./pages/Blog";
 import Categories from "./pages/Categories";
 // import Category from "./components/molecules/Category";
@@ -26,8 +27,10 @@ function App() {
 				<Route element={<Home />} path="/" exact />
 				<Route element={<Blog />} path="/blog" />
 				<Route element={<Categories />} path="/categories" />
-				{/* <Route element={<Category />} path="/category/:slug" /> */}
-				<Route element={<Post />}  path="blog/:slug" />
+
+				{/* Posts & Category pages */}
+				<Route element={<Post />}  path="/blog/:slug" />
+				<Route element={<FilteredPosts />}  path="/category/:slug" />
 			</Routes>
 
 			<Footer />

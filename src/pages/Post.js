@@ -64,7 +64,7 @@ const Post = () => {
           <div className="my-6">
             
             <h4 className="mb-1 inline-block font-regular">Category:&nbsp;
-              <Link className="font-semibold hover:underline" to={"/category/" + postData.category.title.toLowerCase()}>
+              <Link className="font-semibold hover:underline" to={"/category/" + postData.category.title}>
                 {postData.category.title}
               </Link>
             </h4>

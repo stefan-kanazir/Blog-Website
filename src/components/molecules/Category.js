@@ -15,7 +15,7 @@ function urlFor(source) {
 const Category = ({ category }) => {
 	return (
 		<article className="group flex flex-col shadow-lg h-full bg-white rounded-xl overflow-hidden">
-			<Link to={"/category/" + category.slug.current}>
+			<Link to={"/category/" + category.title}>
 				<div class="aspect-w-16 aspect-h-9">				
 					<img
 						src={urlFor(category.image).url()}
@@ -28,7 +28,7 @@ const Category = ({ category }) => {
 			<div className="p-6 flex-grow">
 				<h2 className="text-lg font-semibold mb-1">{category.title}</h2>
 				<p className="pb-4">{category.description}</p>
-				<Link to={"/category/" + category.slug.current}>
+				<Link to={"/category/" + category.title}>
 					<SecondaryButton>
 						View all posts
 					</SecondaryButton>
