@@ -14,8 +14,8 @@ function urlFor(source) {
 
 const Category = ({ category }) => {
 	return (
-		<article className="group flex flex-col shadow-lg h-full bg-white rounded-xl overflow-hidden">
-			<Link to={"/category/" + category.title}>
+		<article className="group flex flex-col shadow-lg h-full bg-gray-800 rounded-xl overflow-hidden">
+			{/* <Link to={"/category/" + category.title}>
 				<div class="aspect-w-16 aspect-h-9">				
 					<img
 						src={urlFor(category.image).url()}
@@ -23,13 +23,13 @@ const Category = ({ category }) => {
 						className="group w-full h-full object-center object-cover"
 					/>				
 				</div>
-			</Link>
+			</Link> */}
 
-			<div className="p-6 flex-grow">
-				<h2 className="text-lg font-semibold mb-1">{category.title}</h2>
-				<p className="pb-4">{category.description}</p>
+			<div className="p-12 flex-grow">
+				<h2 className="text-white font-semibold mb-4">{category.title}</h2>
+				<p className="pb-10 text-gray-300">{category.description}</p>
 				<Link to={"/category/" + category.title}>
-					<SecondaryButton>
+					<SecondaryButton $light={true}>
 						View all posts
 					</SecondaryButton>
 				</Link>

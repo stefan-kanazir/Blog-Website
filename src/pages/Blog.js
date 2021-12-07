@@ -1,5 +1,5 @@
 import React from "react";
-import AllPosts from "../components/AllPosts";
+import AllPosts from "../components/organisms/AllPosts";
 
 const Home = () =>  {
 
