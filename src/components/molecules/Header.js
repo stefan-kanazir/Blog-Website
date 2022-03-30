@@ -19,8 +19,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/about"
-                                className="hover:text-green-600"
-                                activeClassName="active-link"
+                                className="hover:text-green-700 hover:underline"
                             >
                                 About
                             </NavLink>
@@ -28,8 +27,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/categories"
-                                className="hover:text-green-600"
-                                activeClassName="active-link"
+                                className="hover:text-green-700 hover:underline"
                             >
                                 Categories
                             </NavLink>
@@ -37,8 +35,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/blog"
-                                className="hover:text-green-600"
-                                activeClassName="active-link"
+                                className="hover:text-green-700 hover:underline"
                             >
                                 Blog
                             </NavLink>
@@ -46,8 +43,7 @@ const Header = () => {
                         <li>
                             <NavLink
                                 to="/contact"
-                                className="hover:text-green-600"
-                                activeClassName="active-link"
+                                className="hover:text-green-700 hover:underline"
                             >
                                 Contact
                             </NavLink>
@@ -86,7 +82,6 @@ const Header = () => {
                             <NavLink
                                 to="/"
                                 className="block text-xl p-6 w-full border-b"
-                                activeClassName="active-link"
                             >
                                 Home
                             </NavLink>
@@ -95,7 +90,6 @@ const Header = () => {
                             <NavLink
                                 to="/about"
                                 className="block text-xl p-6 w-full border-b"
-                                activeClassName="active-link"
                             >
                                 About
                             </NavLink>
@@ -104,7 +98,6 @@ const Header = () => {
                             <NavLink
                                 to="/categories"
                                 className="block text-xl p-6 w-full border-b"
-                                activeClassName="active-link"
                             >
                                 Categories
                             </NavLink>
@@ -113,7 +106,6 @@ const Header = () => {
                             <NavLink
                                 to="/blog"
                                 className="block text-xl p-6 w-full border-b"
-                                activeClassName="active-link"
                             >
                                 Blog
                             </NavLink>
@@ -122,7 +114,6 @@ const Header = () => {
                             <NavLink
                                 to="/contact"
                                 className="block text-xl p-6 w-full"
-                                activeClassName="active-link"
                             >
                                 Contact
                             </NavLink>
