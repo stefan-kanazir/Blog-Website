@@ -16,7 +16,6 @@ const Header = () => {
                             <NavLink
                                 to="/about"
                                 className="hover:text-white hover:underline"
-                                activeClassName="active-link"
                             >
                                 About
                             </NavLink>
@@ -25,7 +24,6 @@ const Header = () => {
                             <NavLink
                                 to="/categories"
                                 className="hover:text-white hover:underline"
-                                activeClassName="active-link"
                             >
                                 Categories
                             </NavLink>
@@ -34,7 +32,6 @@ const Header = () => {
                             <NavLink
                                 to="/blog"
                                 className="hover:text-white hover:underline"
-                                activeClassName="active-link"
                             >
                                 Blog
                             </NavLink>
@@ -43,7 +40,6 @@ const Header = () => {
                             <NavLink
                                 to="/contact"
                                 className="hover:text-white hover:underline"
-                                activeClassName="active-link"
                             >
                                 Contact
                             </NavLink>
