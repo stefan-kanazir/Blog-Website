@@ -59,7 +59,6 @@ export const SecondaryButton = tw(Button) `
 
         focus:ring 
         focus:ring-white 
-        focus:ring-offset-2 
         focus:ring-offset-transparent 
         ` : `
         text-green-700
@@ -70,7 +69,6 @@ export const SecondaryButton = tw(Button) `
 
         focus:ring 
         focus:ring-green-700 
-        focus:ring-offset-2 
         focus:ring-offset-transparent 
         `
     )}

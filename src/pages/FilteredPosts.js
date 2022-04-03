@@ -38,7 +38,7 @@ const FilteredPosts = () => {
 				<Link to={"/blog/" + post.slug.current} key={post.slug.current}>
 					<article key={index} className="group flex flex-col shadow-lg h-full bg-white duration-300 rounded-xl overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl">
 						<div class="aspect-w-16 aspect-h-9">
-						<img src={post.mainImage.asset.url} alt={`${post.title}`} className="group w-full h-full object-center object-cover" />
+							<img src={post.mainImage.asset.url} alt={`${post.title}`} className="group w-full h-full object-center object-cover" />
 						</div>
 			
 						<small className="mb-3 mt-6 border-l-2 border-green-700 pl-6 text-sm block text-green-700 font-bold">{post.category.title}</small>

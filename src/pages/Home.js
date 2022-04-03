@@ -2,6 +2,7 @@ import React from "react";
 import AllPosts from "../components/organisms/AllPosts";
 import Hero from "../components/molecules/Hero";
 import Features from "../components/molecules/Features";
+import ContentImageDuo from "../components/molecules/ContentImageDuo";
 
 const Home = () =>  {
 
@@ -10,7 +11,9 @@ const Home = () =>  {
         <Hero /> 
         <div className="container mx-auto">
             <Features />
-            <h2 className="text-3xl lg:text-5xl mb-16 mt-24 text-center">Featured Articles</h2>
+            <ContentImageDuo image = "shopify" />
+            <ContentImageDuo image = "laptop" reverse />
+            <h2 className="text-3xl lg:text-5xl font-semibold mb-16 mt-24 text-center">Featured Articles</h2>
             <AllPosts />
         </div>
     </div>

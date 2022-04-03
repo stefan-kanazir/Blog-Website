@@ -3,8 +3,8 @@ import FeatureBox from '../atoms/FeatureBox'
 
 const Features = () => {
     return (
-        <section>
-            <h2 className="text-5xl mb-16 font-semibold">Benefits of working with us</h2>
+        <section className="mt-24">
+            <h2 className="text-3xl lg:text-5xl font-semibold mb-16">Benefits of working with us</h2>
             <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
                 <FeatureBox title = "Time zones ain’t no thing" />
                 <FeatureBox title = "Full spectrum of services" />
