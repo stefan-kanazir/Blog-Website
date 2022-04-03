@@ -17,36 +17,13 @@ const Header = () => {
                 <nav className="hidden lg:block text-gray-600">
                     <ul className="flex gap-x-10 flex-col items-center lg:flex-row">
                         <li>
-                            <NavLink
-                                to="/about"
-                                className="hover:text-green-700 hover:underline"
-                            >
-                                About
-                            </NavLink>
+                            <a href="/#categories" className="hover:text-green-700 hover:underline">Categories</a>
                         </li>
                         <li>
-                            <NavLink
-                                to="/categories"
-                                className="hover:text-green-700 hover:underline"
-                            >
-                                Categories
-                            </NavLink>
+                            <a href="/#blog" className="hover:text-green-700 hover:underline">Blog</a>
                         </li>
                         <li>
-                            <NavLink
-                                to="/blog"
-                                className="hover:text-green-700 hover:underline"
-                            >
-                                Blog
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/contact"
-                                className="hover:text-green-700 hover:underline"
-                            >
-                                Contact
-                            </NavLink>
+                            <a href="#footer" className="hover:text-green-700 hover:underline">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -78,45 +55,17 @@ const Header = () => {
             {isOpen ? (
                 <nav className="mx-auto py-4 shadow-2xl mb-8 block rounded lg:hidden">
                     <ul className="flex flex-col items-center px-6">
-                    <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <NavLink
-                                to="/"
-                                className="block text-xl p-6 w-full border-b"
-                            >
-                                Home
-                            </NavLink>
+                        <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
+                            <a href="/" className="block text-xl p-6 w-full border-b">Home</a>
                         </li>
                         <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <NavLink
-                                to="/about"
-                                className="block text-xl p-6 w-full border-b"
-                            >
-                                About
-                            </NavLink>
+                            <a href="/#categories" className="block text-xl p-6 w-full border-b">Categories</a>
                         </li>
                         <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <NavLink
-                                to="/categories"
-                                className="block text-xl p-6 w-full border-b"
-                            >
-                                Categories
-                            </NavLink>
+                            <a href="/#blog" className="block text-xl p-6 w-full border-b">Blog</a>
                         </li>
                         <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <NavLink
-                                to="/blog"
-                                className="block text-xl p-6 w-full border-b"
-                            >
-                                Blog
-                            </NavLink>
-                        </li>
-                        <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <NavLink
-                                to="/contact"
-                                className="block text-xl p-6 w-full"
-                            >
-                                Contact
-                            </NavLink>
+                            <a href="#footer" className="block text-xl p-6 w-full border-b">Contact</a>
                         </li>
                     </ul>
                 </nav>

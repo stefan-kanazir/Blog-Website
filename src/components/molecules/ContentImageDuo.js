@@ -3,7 +3,7 @@ import { SecondaryButton } from '../atoms/Buttons'
 
 const ContentImageDuo = ({reverse, image}) => {
     return (
-        <section className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-16 mt-24 items-center`}>
+        <section className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-16 mt-32 items-center`}>
             <div className="w-full md:w-1/2 h-full rounded-xl md:overflow-hidden">
                 <div className="aspect-w-1 aspect-h-1">                
                     <img className="w-full h-full object-center object-cover" src={`/images/${image}.jpg`} alt="Shopify" />

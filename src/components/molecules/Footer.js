@@ -5,7 +5,7 @@ import { IoLogoTwitter, IoMdMail, IoLogoGithub, IoLogoDribbble, IoLogoLinkedin }
 
 const Header = () => {
 	return (
-		<footer className="py-12 bg-green-900 mt-12">
+		<footer className="py-12 bg-green-900 mt-32" id="footer">
             <div className="container mx-auto">
                 <NavLink to="/" className="text-xl block text-center lg:text-2xl font-semibold text-white hover:text-gray-300">
                     SmartCommerce
@@ -13,36 +13,13 @@ const Header = () => {
                 <nav className="text-gray-300 border-b pb-12 mt-4 border-opacity-20">
                     <ul className="flex gap-x-10 items-center justify-center">
                         <li>
-                            <NavLink
-                                to="/about"
-                                className="hover:text-white hover:underline"
-                            >
-                                About
-                            </NavLink>
+                            <a href="/#categories" className="hover:text-white hover:underline">Categories</a>
                         </li>
                         <li>
-                            <NavLink
-                                to="/categories"
-                                className="hover:text-white hover:underline"
-                            >
-                                Categories
-                            </NavLink>
+                            <a href="/#blog" className="hover:text-white hover:underline">Blog</a>
                         </li>
                         <li>
-                            <NavLink
-                                to="/blog"
-                                className="hover:text-white hover:underline"
-                            >
-                                Blog
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/contact"
-                                className="hover:text-white hover:underline"
-                            >
-                                Contact
-                            </NavLink>
+                            <a href="#footer" className="hover:text-white hover:underline">Contact</a>
                         </li>
                     </ul>
                 </nav>
