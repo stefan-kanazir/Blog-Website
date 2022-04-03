@@ -65,7 +65,7 @@ const Header = () => {
                             <a href="/#blog" className="block text-xl p-6 w-full border-b">Blog</a>
                         </li>
                         <li className="w-full" onClick={() => setIsOpen(!isOpen)}>
-                            <a href="#footer" className="block text-xl p-6 w-full border-b">Contact</a>
+                            <a href="#footer" className="block text-xl p-6 w-full">Contact</a>
                         </li>
                     </ul>
                 </nav>

@@ -15,9 +15,9 @@ const Hero = () => {
                         <Link to="/blog">
                             <PrimaryButton $light={true}>Get started</PrimaryButton>
                         </Link>
-                        <Link to="/about">
+                        <a href="/#features">
                             <TertiaryButton $light={true}>How it works <HiArrowNarrowRight className="ml-2 "/></TertiaryButton>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <img src={HeroImage} alt="Ecommerce statistic"/>
